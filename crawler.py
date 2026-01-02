@@ -23,18 +23,19 @@ class Crawler:
     def fetch_problem_name(self, url):
         if url == "":
             return ""
+        time.sleep(1)
         html = requests.get(url, headers=self.headers)
         soup = BeautifulSoup(html.content, "html.parser")
         for tag in soup.select("title"):
             while True:
                 if tag.text[0] != "4":
                     return tag.text
-        return "Error: Unable to fetch problem name"
+        return "Error: Unable to fetch a problem name"
 
 
 # 単体テスト
 if __name__ == "__main__":
     crawler = Crawler()
     test_url = "https://atcoder.jp/contests/abc269/tasks/abc269_a"
-    problem_name = crawler.fetch_problem_name(test_url)
+    problem_name = crawler.fetch_problem_name(self=crawler, url=test_url)
     print(problem_name)
