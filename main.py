@@ -20,7 +20,7 @@ def input_student_ids() -> list:
     return student_ids
 
 
-def select_course():
+def select_course() -> str:
     course = st.selectbox(
         label="選択してください",
         options=(
@@ -83,41 +83,44 @@ def get_problems_by_course(course: str) -> list:
         return []
 
 
-def input_problems():
+def input_problems() -> dict:
     crawler = cr.Crawler()
-    problem_urls = []
-    problem_names = []
+    course_detail = {}
     for i in range(1, 6):
         url = st.text_input(f"問題ページのURLを入力してください({i}問目)")
         if url != "":
-            problem_urls.append(url)
-            problem_name = crawler.fetch_problem_name(self=crawler, url=url)
-            problem_names.append(problem_name)
-    return problem_urls, problem_names
+            # urlから問題名を取得
+            if url in pb.url_to_problem_name.keys():
+                problem_name = pb.url_to_problem_name[url]
+            else:
+                problem_name = crawler.fetch_problem_name(self=crawler, url=url)
+            course_detail[url] = problem_name
+    return course_detail
 
 
-def get_course_details():
+def get_course_detail() -> dict:
     course = select_course()
     if course != "手動入力":
         problems = get_problems_by_course(course)
-        problem_names = []
+        course_detail = {}
         for problem in problems:
-            problem_names.append(pb.url_to_problem_name[problem])
-        return problems, problem_names
+            course_detail[problem] = pb.url_to_problem_name.get(problem, "問題名不明")
+        return course_detail
     else:
         return input_problems()
 
 
-def make_dataframe(student_ids, problem_urls, problem_names):
+def make_dataframe(student_ids: list, course_detail: dict) -> pd.DataFrame:
+    crawler = cr.Crawler()
     data = {
         "問題リンク": [
             f'<a href="{url}" target="_blank">{name}</a>'
-            for url, name in zip(problem_urls, problem_names)
+            for url, name in course_detail.items()
         ]
     }
     # ここに各問題を学生でクロールして進捗を確認する処理を追加
     for student_id in student_ids:
-        data[student_id] = ["未確認"] * len(problem_urls)
+        data[student_id] = ["あ"] * len(course_detail)
     df = pd.DataFrame(data)
     return df
 
@@ -125,9 +128,9 @@ def make_dataframe(student_ids, problem_urls, problem_names):
 def main():
     show_message()
     student_ids = input_student_ids()
-    problem_urls, problem_names = get_course_details()
+    course_detail = get_course_detail()
     if st.button("進捗を確認する"):
-        df = make_dataframe(student_ids, problem_urls, problem_names)
+        df = make_dataframe(student_ids, course_detail)
         st.write(
             # htmlでリンクを有効化、ヘッダを中央揃え
             df.to_html(escape=False, index=False).replace(

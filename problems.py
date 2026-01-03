@@ -1,3 +1,4 @@
+# 問題リスト。更新がある場合はその都度編集する。
 A_calc = [
     "https://atcoder.jp/contests/joi2022yo1c/tasks/joi2022_yo1c_a",
     "https://atcoder.jp/contests/joi2024yo1a/tasks/joi2024_yo1a_a",
@@ -157,6 +158,7 @@ S3_recursive_Advance = [
     "https://atcoder.jp/contests/abc196/tasks/abc196_d",
 ]
 
+# URLと問題名の対応。随時更新。
 url_to_problem_name = {
     "https://atcoder.jp/contests/joi2022yo1c/tasks/joi2022_yo1c_a": "A - 身長 (Height)",
     "https://atcoder.jp/contests/joi2024yo1a/tasks/joi2024_yo1a_a": "A - 果物 (Fruit)",
