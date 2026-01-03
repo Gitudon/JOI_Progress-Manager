@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
-import problems as pb
 import crawler as cr
+import problems as pb
 
 
 def show_message():
@@ -108,16 +108,33 @@ def get_course_details():
         return input_problems()
 
 
+def make_dataframe(student_ids, problem_urls, problem_names):
+    data = {
+        "問題リンク": [
+            f'<a href="{url}" target="_blank">{name}</a>'
+            for url, name in zip(problem_urls, problem_names)
+        ]
+    }
+    # ここに各問題を学生でクロールして進捗を確認する処理を追加
+    for student_id in student_ids:
+        data[student_id] = ["未確認"] * len(problem_urls)
+    df = pd.DataFrame(data)
+    return df
+
+
 def main():
     show_message()
     student_ids = input_student_ids()
     problem_urls, problem_names = get_course_details()
     if st.button("進捗を確認する"):
-        st.write("入力されたAtCoder ID:")
-        st.write(student_ids)
-        st.write("入力された問題URLと問題名:")
-        st.write(problem_names)
-        st.write(problem_urls)
+        df = make_dataframe(student_ids, problem_urls, problem_names)
+        st.write(
+            # htmlでリンクを有効化、ヘッダを中央揃え
+            df.to_html(escape=False, index=False).replace(
+                "<th>", '<th style="text-align: center;">'
+            ),
+            unsafe_allow_html=True,
+        )
 
 
 if __name__ == "__main__":
