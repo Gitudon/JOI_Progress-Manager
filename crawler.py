@@ -1,22 +1,12 @@
 import requests
 import streamlit as st
 from bs4 import BeautifulSoup
-import os
-import dotenv
-import socket
 import time
 
 
 class Crawler:
     def __init__(self):
-        # ホスト名で環境を判断
-        hostname = socket.gethostname()
-        dotenv.load_dotenv()
-        if hostname == os.getenv("LOCAL_HOSTNAME"):  # ローカル環境
-            COOKIE = os.getenv("COOKIE")
-        else:
-            # オンライン環境
-            COOKIE = st.secrets["COOKIE"]
+        COOKIE = st.secrets["COOKIE"]
         self.headers = {
             "Cookie": COOKIE,
             "User-Agent": "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
