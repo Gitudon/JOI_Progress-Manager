@@ -90,11 +90,3 @@ class Crawler:
         )
         result = (result_text, f"https://atcoder.jp{submission_detail}")
         return result
-
-
-# 単体テスト
-if __name__ == "__main__":
-    crawler = Crawler()
-    url = "https://atcoder.jp/contests/joi2022yo1c/tasks/joi2022_yo1c_a"
-    user_id = "ccc_udon"
-    print(crawler.fetch_result_by_user(crawler, url, user_id))

@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import crawler as cr
 import problems as pb
+import dictionary as dic
 
 
 def show_message():
@@ -24,22 +25,22 @@ def select_course() -> str:
     course = st.selectbox(
         label="選択してください",
         options=(
-            "A-四則演算",
-            "A-条件分岐",
-            "B-文字列",
-            "B-forループ",
-            "C-リスト",
-            "C-1次予選過去問",
-            "S1-whileループ",
-            "S1-多重ループ",
-            "S1-多次元リスト",
-            "S2-組み込み関数",
-            "S2-組み込み関数(上級)",
-            "S2-ソート関数",
-            "S2-ソート関数(上級)",
-            "S3-関数の定義",
-            "S3-再帰関数",
-            "S3-再帰関数(上級)",
+            "A - 四則演算",
+            "A - 条件分岐",
+            "B - 文字列",
+            "B - forループ",
+            "C - リスト",
+            "C - 1次予選過去問",
+            "S1 - whileループ",
+            "S1 - 多重ループ",
+            "S1 - 多次元リスト",
+            "S2 - 組み込み関数",
+            "S2 - 組み込み関数(上級)",
+            "S2 - ソート関数",
+            "S2 - ソート関数(上級)",
+            "S3 - 関数の定義",
+            "S3 - 再帰関数",
+            "S3 - 再帰関数(上級)",
             "手動入力",
         ),
     )
@@ -58,37 +59,37 @@ def select_crawl_mode() -> str:
 
 
 def get_problems_by_course(course: str) -> list:
-    if course == "A-四則演算":
+    if course == "A - 四則演算":
         return pb.A_calc
-    elif course == "A-条件分岐":
+    elif course == "A - 条件分岐":
         return pb.A_if
-    elif course == "B-文字列":
+    elif course == "B - 文字列":
         return pb.B_string
-    elif course == "B-forループ":
+    elif course == "B - forループ":
         return pb.B_for
-    elif course == "C-リスト":
+    elif course == "C - リスト":
         return pb.C_list
-    elif course == "C-1次予選過去問":
+    elif course == "C - 1次予選過去問":
         return pb.C_kakomon
-    elif course == "S1-whileループ":
+    elif course == "S1 - whileループ":
         return pb.S1_while
-    elif course == "S1-多重ループ":
+    elif course == "S1 - 多重ループ":
         return pb.S1_multi
-    elif course == "S1-多次元リスト":
+    elif course == "S1 - 多次元リスト":
         return pb.S1_multi_list
-    elif course == "S2-組み込み関数":
+    elif course == "S2 - 組み込み関数":
         return pb.S2_Built_in_functions
-    elif course == "S2-組み込み関数(上級)":
+    elif course == "S2 - 組み込み関数(上級)":
         return pb.S2_Built_in_functions_Advance
-    elif course == "S2-ソート関数":
+    elif course == "S2 - ソート関数":
         return pb.S2_sort
-    elif course == "S2-ソート関数(上級)":
+    elif course == "S2 - ソート関数(上級)":
         return pb.S2_sort_Advance
-    elif course == "S3-関数の定義":
+    elif course == "S3 - 関数の定義":
         return pb.S3_function
-    elif course == "S3-再帰関数":
+    elif course == "S3 - 再帰関数":
         return pb.S3_recursive
-    elif course == "S3-再帰関数(上級)":
+    elif course == "S3 - 再帰関数(上級)":
         return pb.S3_recursive_Advance
     else:
         return []
@@ -101,8 +102,8 @@ def input_problems() -> dict:
         url = st.text_input(f"問題ページのURLを入力してください({i}問目)")
         if url != "":
             # urlから問題名を取得
-            if url in pb.url_to_problem_name.keys():
-                problem_name = pb.url_to_problem_name[url]
+            if url in dic.url_to_problem_name.keys():
+                problem_name = dic.url_to_problem_name[url]
             else:
                 problem_name = crawler.fetch_problem_name(self=crawler, url=url)
             course_detail[url] = problem_name
@@ -119,7 +120,7 @@ def get_course_detail() -> dict:
         problems = get_problems_by_course(course)
         course_detail = {}
         for problem in problems:
-            course_detail[problem] = pb.url_to_problem_name.get(problem, "問題名不明")
+            course_detail[problem] = dic.url_to_problem_name.get(problem, "問題名不明")
         return course_detail
     else:
         return input_problems()
@@ -130,6 +131,7 @@ def ditect_submission_detail_color(result_text: str) -> str:
         "AC": "lightgreen",
         "WA": "orange",
         "TLE": "orange",
+        "MLE": "orange",
         "RE": "orange",
         "CE": "orange",
     }
