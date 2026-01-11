@@ -153,4 +153,7 @@ url_to_problem_name = {
     "https://atcoder.jp/contests/abc392/tasks/abc392_a": "A - Shuffled Equation",
     "https://atcoder.jp/contests/abc421/tasks/abc421_b": "B - Fibonacci Reversed",
     "https://atcoder.jp/contests/abc427/tasks/abc427_b": "B - Sum of Digits Sequence",
+    "https://atcoder.jp/contests/abc153/tasks/abc153_a": "A - Serval vs Monster",
+    "https://atcoder.jp/contests/abc420/tasks/abc420_a": "A - What month is it?",
+    "https://atcoder.jp/contests/abc178/tasks/abc178_a": "A - Not",
 }

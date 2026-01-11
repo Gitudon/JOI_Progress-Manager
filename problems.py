@@ -15,11 +15,12 @@ A_calc = [
 ]
 A_if = [
     "https://atcoder.jp/contests/joi2021yo1b/tasks/joi2021_yo1b_a",
+    "https://atcoder.jp/contests/abc178/tasks/abc178_a",
     "https://atcoder.jp/contests/joi2023yo1a/tasks/joi2023_yo1a_b",
     "https://atcoder.jp/contests/abc210/tasks/abc210_a",
     "https://atcoder.jp/contests/joi2023yo1c/tasks/joi2023_yo1c_b",
     "https://atcoder.jp/contests/joi2021yo1c/tasks/joi2021_yo1c_a",
-    "https://atcoder.jp/contests/abc086/tasks/abc086_a",
+    "https://atcoder.jp/contests/abc420/tasks/abc420_a",
     "https://atcoder.jp/contests/joi2023yo1b/tasks/joi2023_yo1b_b",
     "https://atcoder.jp/contests/abc214/tasks/abc214_a",
     "https://atcoder.jp/contests/abc127/tasks/abc127_a",
