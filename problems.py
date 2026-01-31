@@ -121,7 +121,7 @@ S2_Built_in_functions = [
     "https://atcoder.jp/contests/abc115/tasks/abc115_b",
     "https://atcoder.jp/contests/abc069/tasks/abc069_b",
 ]
-S2_Built_in_functions_Advance = [
+S2_Built_in_functions_advance = [
     "https://atcoder.jp/contests/abc114/tasks/abc114_b",
     "https://atcoder.jp/contests/abc052/tasks/abc052_b",
     "https://atcoder.jp/contests/abc294/tasks/abc294_b",
@@ -134,7 +134,7 @@ S2_sort = [
     "https://atcoder.jp/contests/abc329/tasks/abc329_b",
     "https://atcoder.jp/contests/abc337/tasks/abc337_b",
 ]
-S2_sort_Advance = [
+S2_sort_advance = [
     "https://atcoder.jp/contests/abc275/tasks/abc275_a",
     "https://atcoder.jp/contests/abc201/tasks/abc201_b",
     "https://atcoder.jp/contests/abc088/tasks/abc088_b",
@@ -155,8 +155,12 @@ S3_recursive = [
     "https://atcoder.jp/contests/tenka1-2015-qualb/tasks/tenka1_2015_qualB_a",
     "https://atcoder.jp/contests/abc389/tasks/abc389_b",
 ]
-S3_recursive_Advance = [
+S3_recursive_advance = [
     "https://atcoder.jp/contests/abc421/tasks/abc421_b",
     "https://atcoder.jp/contests/abc427/tasks/abc427_b",
     "https://atcoder.jp/contests/abc029/tasks/abc029_c",
 ]
+EX1_supplement_of_each_courses_first = []
+EX1_supplement_of_each_courses_second = []
+EX2_techniques_first = []
+EX2_techniques_second = []

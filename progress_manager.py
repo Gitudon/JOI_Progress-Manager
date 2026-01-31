@@ -41,6 +41,10 @@ def select_course() -> str:
             "S3 - 関数の定義",
             "S3 - 再帰関数",
             "S3 - 再帰関数(上級)",
+            "EX1 - 各コースの補足(前半)",
+            "EX1 - 各コースの補足(後半)",
+            "EX2 - テクニック集(前半)",
+            "EX2 - テクニック集(後半)",
             "手動入力",
         ),
     )
@@ -80,17 +84,25 @@ def get_problems_by_course(course: str) -> list:
     elif course == "S2 - 組み込み関数":
         return pb.S2_Built_in_functions
     elif course == "S2 - 組み込み関数(上級)":
-        return pb.S2_Built_in_functions_Advance
+        return pb.S2_Built_in_functions_advance
     elif course == "S2 - ソート関数":
         return pb.S2_sort
     elif course == "S2 - ソート関数(上級)":
-        return pb.S2_sort_Advance
+        return pb.S2_sort_advance
     elif course == "S3 - 関数の定義":
         return pb.S3_function
     elif course == "S3 - 再帰関数":
         return pb.S3_recursive
     elif course == "S3 - 再帰関数(上級)":
-        return pb.S3_recursive_Advance
+        return pb.S3_recursive_advance
+    elif course == "EX1 - 各コースの補足(前半)":
+        return pb.EX1_supplement_of_each_courses_first
+    elif course == "EX1 - 各コースの補足(後半)":
+        return pb.EX1_supplement_of_each_courses_second
+    elif course == "EX2 - テクニック集(前半)":
+        return pb.EX2_techniques_first
+    elif course == "EX2 - テクニック集(後半)":
+        return pb.EX2_techniques_second
     else:
         return []
 
