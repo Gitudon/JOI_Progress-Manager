@@ -17,6 +17,7 @@ class CrawlerForUpdate(Crawler):
 def update_dictionary() -> dict:
     new_url_to_problem_name = url_to_problem_name.copy()
     crawler = CrawlerForUpdate()
+    # ハードコーディングしないようにしたい
     problem_urls = [
         A_calc,
         A_if,
@@ -28,12 +29,16 @@ def update_dictionary() -> dict:
         S1_multi,
         S1_multi_list,
         S2_Built_in_functions,
-        S2_Built_in_functions_Advance,
+        S2_Built_in_functions_advance,
         S2_sort,
-        S2_sort_Advance,
+        S2_sort_advance,
         S3_function,
         S3_recursive,
-        S3_recursive_Advance,
+        S3_recursive_advance,
+        EX1_supplement_of_each_courses_first,
+        EX1_supplement_of_each_courses_second,
+        EX2_techniques_first,
+        EX2_techniques_second,
     ]
     for problem_list in problem_urls:
         for url in problem_list:

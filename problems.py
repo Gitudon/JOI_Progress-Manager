@@ -68,18 +68,18 @@ C_list = [
     "https://atcoder.jp/contests/abc361/tasks/abc361_a",
 ]
 C_kakomon = [
-    "https://atcoder.jp/contests/joi2025yo1a/tasks/joi2025_yo1a_a",
-    "https://atcoder.jp/contests/joi2025yo1a/tasks/joi2025_yo1a_b",
-    "https://atcoder.jp/contests/joi2025yo1a/tasks/joi2025_yo1a_c",
-    "https://atcoder.jp/contests/joi2025yo1a/tasks/joi2025_yo1a_d",
-    "https://atcoder.jp/contests/joi2025yo1b/tasks/joi2025_yo1b_a",
-    "https://atcoder.jp/contests/joi2025yo1b/tasks/joi2025_yo1b_b",
-    "https://atcoder.jp/contests/joi2025yo1b/tasks/joi2025_yo1b_c",
-    "https://atcoder.jp/contests/joi2025yo1b/tasks/joi2025_yo1b_d",
-    "https://atcoder.jp/contests/joi2025yo1c/tasks/joi2025_yo1c_a",
-    "https://atcoder.jp/contests/joi2025yo1c/tasks/joi2025_yo1c_b",
-    "https://atcoder.jp/contests/joi2025yo1c/tasks/joi2025_yo1c_c",
-    "https://atcoder.jp/contests/joi2025yo1c/tasks/joi2025_yo1c_d",
+    "https://atcoder.jp/contests/joi2026yo1a/tasks/joi2026_yo1a_a",
+    "https://atcoder.jp/contests/joi2026yo1a/tasks/joi2026_yo1a_b",
+    "https://atcoder.jp/contests/joi2026yo1a/tasks/joi2026_yo1a_c",
+    "https://atcoder.jp/contests/joi2026yo1a/tasks/joi2026_yo1a_d",
+    "https://atcoder.jp/contests/joi2026yo1b/tasks/joi2026_yo1b_a",
+    "https://atcoder.jp/contests/joi2026yo1b/tasks/joi2026_yo1b_b",
+    "https://atcoder.jp/contests/joi2026yo1b/tasks/joi2026_yo1b_c",
+    "https://atcoder.jp/contests/joi2026yo1b/tasks/joi2026_yo1b_d",
+    "https://atcoder.jp/contests/joi2026yo1c/tasks/joi2026_yo1c_a",
+    "https://atcoder.jp/contests/joi2026yo1c/tasks/joi2026_yo1c_b",
+    "https://atcoder.jp/contests/joi2026yo1c/tasks/joi2026_yo1c_c",
+    "https://atcoder.jp/contests/joi2026yo1c/tasks/joi2026_yo1c_d",
 ]
 S1_while = [
     "https://atcoder.jp/contests/joi2019yo/tasks/joi2019_yo_a",
@@ -121,7 +121,7 @@ S2_Built_in_functions = [
     "https://atcoder.jp/contests/abc115/tasks/abc115_b",
     "https://atcoder.jp/contests/abc069/tasks/abc069_b",
 ]
-S2_Built_in_functions_Advance = [
+S2_Built_in_functions_advance = [
     "https://atcoder.jp/contests/abc114/tasks/abc114_b",
     "https://atcoder.jp/contests/abc052/tasks/abc052_b",
     "https://atcoder.jp/contests/abc294/tasks/abc294_b",
@@ -134,7 +134,7 @@ S2_sort = [
     "https://atcoder.jp/contests/abc329/tasks/abc329_b",
     "https://atcoder.jp/contests/abc337/tasks/abc337_b",
 ]
-S2_sort_Advance = [
+S2_sort_advance = [
     "https://atcoder.jp/contests/abc275/tasks/abc275_a",
     "https://atcoder.jp/contests/abc201/tasks/abc201_b",
     "https://atcoder.jp/contests/abc088/tasks/abc088_b",
@@ -155,8 +155,54 @@ S3_recursive = [
     "https://atcoder.jp/contests/tenka1-2015-qualb/tasks/tenka1_2015_qualB_a",
     "https://atcoder.jp/contests/abc389/tasks/abc389_b",
 ]
-S3_recursive_Advance = [
+S3_recursive_advance = [
     "https://atcoder.jp/contests/abc421/tasks/abc421_b",
     "https://atcoder.jp/contests/abc427/tasks/abc427_b",
     "https://atcoder.jp/contests/abc029/tasks/abc029_c",
+]
+EX1_supplement_of_each_courses_first = [
+    "https://atcoder.jp/contests/abc389/tasks/abc389_a",
+    "https://atcoder.jp/contests/abc230/tasks/abc230_a",
+    "https://atcoder.jp/contests/abc346/tasks/abc346_a",
+    "https://atcoder.jp/contests/adt_all_20240703_3/tasks/abc252_a",
+    "https://atcoder.jp/contests/abc215/tasks/abc215_b",
+    "https://atcoder.jp/contests/abc361/tasks/abc361_a",
+    "https://atcoder.jp/contests/abc176/tasks/abc176_b",
+    "https://atcoder.jp/contests/hhkb2020/tasks/hhkb2020_a",
+    "https://atcoder.jp/contests/abc196/tasks/abc196_b",
+]
+EX1_supplement_of_each_courses_second = [
+    "https://atcoder.jp/contests/abc217/tasks/abc217_b",
+    "https://atcoder.jp/contests/abc240/tasks/abc240_b",
+    "https://atcoder.jp/contests/abc191/tasks/abc191_b",
+    "https://atcoder.jp/contests/abc217/tasks/abc217_a",
+    "https://atcoder.jp/contests/joi2020yo1b/tasks/joi2020_yo1b_b",
+    "https://atcoder.jp/contests/abc279/tasks/abc279_a",
+    "https://atcoder.jp/contests/abc234/tasks/abc234_b",
+    "https://atcoder.jp/contests/abc242/tasks/abc242_b",
+    "https://atcoder.jp/contests/abc233/tasks/abc233_b",
+    "https://atcoder.jp/contests/caddi2018b/tasks/caddi2018b_a",
+    "https://atcoder.jp/contests/joi2022yo1c/tasks/joi2022_yo1c_c",
+]
+EX2_techniques_first = [
+    "https://atcoder.jp/contests/abc029/tasks/abc029_b",
+    "https://atcoder.jp/contests/abc308/tasks/abc308_a",
+    "https://atcoder.jp/contests/abc296/tasks/abc296_a",
+    "https://atcoder.jp/contests/abc163/tasks/abc163_a",
+    "https://atcoder.jp/contests/abc261/tasks/abc261_c",
+    "https://atcoder.jp/contests/abc089/tasks/abc089_b",
+    "https://atcoder.jp/contests/abc371/tasks/abc371_b",
+    "https://atcoder.jp/contests/donuts-2015/tasks/donuts_2015_1",
+    "https://atcoder.jp/contests/abc231/tasks/abc231_b",
+    "https://atcoder.jp/contests/abc226/tasks/abc226_b",
+    "https://atcoder.jp/contests/abc240/tasks/abc240_b",
+    "https://atcoder.jp/contests/abc173/tasks/abc173_b",
+]
+EX2_techniques_second = [
+    "https://atcoder.jp/contests/abc390/tasks/abc390_b",
+    "https://atcoder.jp/contests/joi2007ho/tasks/joi2007ho_a",
+    "https://atcoder.jp/contests/abc037/tasks/abc037_c",
+    "https://atcoder.jp/contests/panasonic2020/tasks/panasonic2020_c",
+    "https://atcoder.jp/contests/abc230/tasks/abc230_b",
+    "https://atcoder.jp/contests/abc189/tasks/abc189_b",
 ]
