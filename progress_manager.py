@@ -4,7 +4,7 @@ import crawler as cr
 import problems as pb
 import dictionary as dic
 
-MAX_STUDENT_NUM = 5
+MAX_STUDENT_NUM = 6
 MAX_PROBLEM_NUM = 5
 
 
