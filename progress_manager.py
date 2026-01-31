@@ -4,6 +4,9 @@ import crawler as cr
 import problems as pb
 import dictionary as dic
 
+MAX_STUDENT_NUM = 5
+MAX_PROBLEM_NUM = 5
+
 
 def show_message():
     st.title("問題進捗確認")
@@ -12,8 +15,8 @@ def show_message():
 
 def input_student_ids() -> list:
     student_ids = []
-    for i in range(1, 6):
-        student_id = st.text_input(f"AtCoder IDを入力してください({i}人目)")
+    for i in range(MAX_STUDENT_NUM + 1):
+        student_id = st.text_input(f"AtCoder IDを入力してください({i + 1}人目)")
         if student_id != "":
             student_ids.append(student_id)
     if student_ids == []:
@@ -110,8 +113,8 @@ def get_problems_by_course(course: str) -> list:
 def input_problems() -> dict:
     crawler = cr.Crawler()
     course_detail = {}
-    for i in range(1, 6):
-        url = st.text_input(f"問題ページのURLを入力してください({i}問目)")
+    for i in range(MAX_PROBLEM_NUM):
+        url = st.text_input(f"問題ページのURLを入力してください({i + 1}問目)")
         if url != "":
             # urlから問題名を取得
             if url in dic.url_to_problem_name.keys():
