@@ -175,6 +175,7 @@ EX1_supplement_of_each_courses_first = [
     "https://atcoder.jp/contests/abc294/tasks/abc294_b",
 ]
 EX1_supplement_of_each_courses_second = [
+    "https://atcoder.jp/contests/abc415/tasks/abc415_a",
     "https://atcoder.jp/contests/abc217/tasks/abc217_b",
     "https://atcoder.jp/contests/abc240/tasks/abc240_b",
     "https://atcoder.jp/contests/abc191/tasks/abc191_b",

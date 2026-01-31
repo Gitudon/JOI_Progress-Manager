@@ -202,4 +202,5 @@ url_to_problem_name = {
     "https://atcoder.jp/contests/abc189/tasks/abc189_b": "B - Alcoholic",
     "https://atcoder.jp/contests/abc020/tasks/abc020_b": "B - 足し算",
     "https://atcoder.jp/contests/abc104/tasks/abc104_b": "B - AcCepted",
+    "https://atcoder.jp/contests/abc415/tasks/abc415_a": "A - Unsupported Type",
 }
