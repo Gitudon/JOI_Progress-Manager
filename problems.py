@@ -170,6 +170,9 @@ EX1_supplement_of_each_courses_first = [
     "https://atcoder.jp/contests/abc176/tasks/abc176_b",
     "https://atcoder.jp/contests/hhkb2020/tasks/hhkb2020_a",
     "https://atcoder.jp/contests/abc196/tasks/abc196_b",
+    "https://atcoder.jp/contests/abc020/tasks/abc020_b",
+    "https://atcoder.jp/contests/abc104/tasks/abc104_b",
+    "https://atcoder.jp/contests/abc294/tasks/abc294_b",
 ]
 EX1_supplement_of_each_courses_second = [
     "https://atcoder.jp/contests/abc217/tasks/abc217_b",

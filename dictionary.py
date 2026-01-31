@@ -200,4 +200,6 @@ url_to_problem_name = {
     "https://atcoder.jp/contests/panasonic2020/tasks/panasonic2020_c": "C - Sqrt Inequality",
     "https://atcoder.jp/contests/abc230/tasks/abc230_b": "B - Triple Metre",
     "https://atcoder.jp/contests/abc189/tasks/abc189_b": "B - Alcoholic",
+    "https://atcoder.jp/contests/abc020/tasks/abc020_b": "B - 足し算",
+    "https://atcoder.jp/contests/abc104/tasks/abc104_b": "B - AcCepted",
 }
