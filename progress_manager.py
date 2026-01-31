@@ -15,7 +15,7 @@ def show_message():
 
 def input_student_ids() -> list:
     student_ids = []
-    for i in range(MAX_STUDENT_NUM + 1):
+    for i in range(MAX_STUDENT_NUM):
         student_id = st.text_input(f"AtCoder IDを入力してください({i + 1}人目)")
         if student_id != "":
             student_ids.append(student_id)
