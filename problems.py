@@ -206,7 +206,7 @@ EX2_techniques_first = [
 EX2_techniques_second = [
     "https://atcoder.jp/contests/abc390/tasks/abc390_b",
     "https://atcoder.jp/contests/joi2007ho/tasks/joi2007ho_a",
-    "https://atcoder.jp/contests/panasonic2020/tasks/panasonic2020_c",
     "https://atcoder.jp/contests/abc189/tasks/abc189_b",
     "https://atcoder.jp/contests/abc037/tasks/abc037_c",
+    "https://atcoder.jp/contests/panasonic2020/tasks/panasonic2020_c",
 ]
