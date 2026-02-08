@@ -46,8 +46,8 @@ def select_course() -> str:
             "S3 - 再帰関数(上級)",
             "EX1 - 各コースの補足(前半)",
             "EX1 - 各コースの補足(後半)",
-            "EX2 - テクニック集(前半)",
-            "EX2 - テクニック集(後半)",
+            "EX2 - テクニック集",
+            "EX2 - 累積和",
             "手動入力",
         ),
     )
@@ -102,10 +102,10 @@ def get_problems_by_course(course: str) -> list:
         return pb.EX1_supplement_of_each_courses_first
     elif course == "EX1 - 各コースの補足(後半)":
         return pb.EX1_supplement_of_each_courses_second
-    elif course == "EX2 - テクニック集(前半)":
-        return pb.EX2_techniques_first
-    elif course == "EX2 - テクニック集(後半)":
-        return pb.EX2_techniques_second
+    elif course == "EX2 - テクニック集":
+        return pb.EX2_techniques
+    elif course == "EX2 - 累積和":
+        return pb.EX2_cumulative_sum
     else:
         return []
 
