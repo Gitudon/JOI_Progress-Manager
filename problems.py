@@ -188,7 +188,7 @@ EX1_supplement_of_each_courses_second = [
     "https://atcoder.jp/contests/caddi2018b/tasks/caddi2018b_a",
     "https://atcoder.jp/contests/joi2022yo1c/tasks/joi2022_yo1c_c",
 ]
-EX2_techniques_first = [
+EX2_techniques = [
     "https://atcoder.jp/contests/abc029/tasks/abc029_b",
     "https://atcoder.jp/contests/abc308/tasks/abc308_a",
     "https://atcoder.jp/contests/abc296/tasks/abc296_a",
@@ -203,10 +203,11 @@ EX2_techniques_first = [
     "https://atcoder.jp/contests/abc371/tasks/abc371_b",
     "https://atcoder.jp/contests/abc230/tasks/abc230_b",
 ]
-EX2_techniques_second = [
-    "https://atcoder.jp/contests/abc390/tasks/abc390_b",
+EX2_cumulative_sum = [
     "https://atcoder.jp/contests/joi2007ho/tasks/joi2007ho_a",
-    "https://atcoder.jp/contests/abc189/tasks/abc189_b",
     "https://atcoder.jp/contests/abc037/tasks/abc037_c",
-    "https://atcoder.jp/contests/panasonic2020/tasks/panasonic2020_c",
+    "https://atcoder.jp/contests/abc411/tasks/abc411_b",
+    # "https://atcoder.jp/contests/abc390/tasks/abc390_b",
+    # "https://atcoder.jp/contests/abc189/tasks/abc189_b",
+    # "https://atcoder.jp/contests/panasonic2020/tasks/panasonic2020_c",
 ]

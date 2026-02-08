@@ -37,8 +37,8 @@ def update_dictionary() -> dict:
         S3_recursive_advance,
         EX1_supplement_of_each_courses_first,
         EX1_supplement_of_each_courses_second,
-        EX2_techniques_first,
-        EX2_techniques_second,
+        EX2_techniques,
+        EX2_cumulative_sum,
     ]
     for problem_list in problem_urls:
         for url in problem_list:
