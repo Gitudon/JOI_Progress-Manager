@@ -199,14 +199,14 @@ EX2_techniques_first = [
     "https://atcoder.jp/contests/donuts-2015/tasks/donuts_2015_1",
     "https://atcoder.jp/contests/abc231/tasks/abc231_b",
     "https://atcoder.jp/contests/abc226/tasks/abc226_b",
-    "https://atcoder.jp/contests/abc371/tasks/abc371_b",
     "https://atcoder.jp/contests/abc173/tasks/abc173_b",
+    "https://atcoder.jp/contests/abc371/tasks/abc371_b",
+    "https://atcoder.jp/contests/abc230/tasks/abc230_b",
 ]
 EX2_techniques_second = [
     "https://atcoder.jp/contests/abc390/tasks/abc390_b",
     "https://atcoder.jp/contests/joi2007ho/tasks/joi2007ho_a",
-    "https://atcoder.jp/contests/abc037/tasks/abc037_c",
     "https://atcoder.jp/contests/panasonic2020/tasks/panasonic2020_c",
-    "https://atcoder.jp/contests/abc230/tasks/abc230_b",
     "https://atcoder.jp/contests/abc189/tasks/abc189_b",
+    "https://atcoder.jp/contests/abc037/tasks/abc037_c",
 ]
