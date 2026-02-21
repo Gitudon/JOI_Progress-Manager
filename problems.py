@@ -182,7 +182,6 @@ EX1_supplement_of_each_courses_second = [
     "https://atcoder.jp/contests/abc217/tasks/abc217_a",
     "https://atcoder.jp/contests/joi2020yo1b/tasks/joi2020_yo1b_b",
     "https://atcoder.jp/contests/abc279/tasks/abc279_a",
-    "https://atcoder.jp/contests/abc234/tasks/abc234_b",
     "https://atcoder.jp/contests/abc242/tasks/abc242_b",
     "https://atcoder.jp/contests/abc233/tasks/abc233_b",
     "https://atcoder.jp/contests/caddi2018b/tasks/caddi2018b_a",
