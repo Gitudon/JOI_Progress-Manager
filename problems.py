@@ -55,17 +55,17 @@ B_for = [
     "https://atcoder.jp/contests/joi2020yo1b/tasks/joi2020_yo1b_b",
 ]
 C_list = [
-    "https://atcoder.jp/contests/joi2021yo1a/tasks/joi2021_yo1a_c",
-    "https://atcoder.jp/contests/abc403/tasks/abc403_a",
-    "https://atcoder.jp/contests/abc015/tasks/abc015_2",
-    "https://atcoder.jp/contests/abc330/tasks/abc330_a",
     "https://atcoder.jp/contests/abc353/tasks/abc353_a",
-    "https://atcoder.jp/contests/abc324/tasks/abc324_a",
+    "https://atcoder.jp/contests/abc403/tasks/abc403_a",
+    "https://atcoder.jp/contests/abc330/tasks/abc330_a",
     "https://atcoder.jp/contests/abc328/tasks/abc328_a",
     "https://atcoder.jp/contests/abc359/tasks/abc359_a",
+    "https://atcoder.jp/contests/abc361/tasks/abc361_a",
+    "https://atcoder.jp/contests/abc324/tasks/abc324_a",
     "https://atcoder.jp/contests/abc351/tasks/abc351_a",
     "https://atcoder.jp/contests/abc346/tasks/abc346_a",
-    "https://atcoder.jp/contests/abc361/tasks/abc361_a",
+    "https://atcoder.jp/contests/abc015/tasks/abc015_2",
+    "https://atcoder.jp/contests/joi2021yo1a/tasks/joi2021_yo1a_c",
 ]
 C_kakomon = [
     "https://atcoder.jp/contests/joi2026yo1a/tasks/joi2026_yo1a_a",
