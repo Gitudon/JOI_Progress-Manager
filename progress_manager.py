@@ -43,7 +43,6 @@ def select_course() -> str:
             "S2 - ソート関数(上級)",
             "S3 - 関数の定義",
             "S3 - 再帰関数",
-            "S3 - 再帰関数(上級)",
             "EX1 - 各コースの補足(前半)",
             "EX1 - 各コースの補足(後半)",
             "EX2 - テクニック集",
@@ -96,8 +95,6 @@ def get_problems_by_course(course: str) -> list:
         return pb.S3_function
     elif course == "S3 - 再帰関数":
         return pb.S3_recursive
-    elif course == "S3 - 再帰関数(上級)":
-        return pb.S3_recursive_advance
     elif course == "EX1 - 各コースの補足(前半)":
         return pb.EX1_supplement_of_each_courses_first
     elif course == "EX1 - 各コースの補足(後半)":

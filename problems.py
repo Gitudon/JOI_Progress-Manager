@@ -154,8 +154,6 @@ S3_recursive = [
     "https://atcoder.jp/contests/abc273/tasks/abc273_a",
     "https://atcoder.jp/contests/tenka1-2015-qualb/tasks/tenka1_2015_qualB_a",
     "https://atcoder.jp/contests/abc389/tasks/abc389_b",
-]
-S3_recursive_advance = [
     "https://atcoder.jp/contests/abc421/tasks/abc421_b",
     "https://atcoder.jp/contests/abc427/tasks/abc427_b",
     "https://atcoder.jp/contests/abc029/tasks/abc029_c",
