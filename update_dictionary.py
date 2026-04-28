@@ -34,7 +34,6 @@ def update_dictionary() -> dict:
         S2_sort_advance,
         S3_function,
         S3_recursive,
-        S3_recursive_advance,
         EX1_supplement_of_each_courses_first,
         EX1_supplement_of_each_courses_second,
         EX2_techniques,

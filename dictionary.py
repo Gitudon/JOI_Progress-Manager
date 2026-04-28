@@ -205,4 +205,5 @@ url_to_problem_name = {
     "https://atcoder.jp/contests/abc415/tasks/abc415_a": "A - Unsupported Type",
     "https://atcoder.jp/contests/abc411/tasks/abc411_b": "B - Distance Table",
     "https://atcoder.jp/contests/abc405/tasks/abc405_c": "C - Sum of Product",
+    "https://atcoder.jp/contests/joi2010ho/tasks/joi2010ho_a": "A - 旅人",
 }

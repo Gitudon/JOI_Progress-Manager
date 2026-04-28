@@ -204,5 +204,6 @@ EX2_cumulative_sum = [
     "https://atcoder.jp/contests/joi2007ho/tasks/joi2007ho_a",
     "https://atcoder.jp/contests/abc037/tasks/abc037_c",
     "https://atcoder.jp/contests/abc411/tasks/abc411_b",
+    "https://atcoder.jp/contests/joi2010ho/tasks/joi2010ho_a",
     "https://atcoder.jp/contests/abc405/tasks/abc405_c",
 ]
