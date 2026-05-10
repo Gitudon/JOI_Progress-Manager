@@ -207,4 +207,5 @@ url_to_problem_name = {
     "https://atcoder.jp/contests/abc405/tasks/abc405_c": "C - Sum of Product",
     "https://atcoder.jp/contests/joi2010ho/tasks/joi2010ho_a": "A - 旅人",
     "https://atcoder.jp/contests/abc455/tasks/abc455_a": "A - 455",
+    "https://atcoder.jp/contests/abc080/tasks/abc080_a": "A - Parking",
 }
