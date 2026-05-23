@@ -9,10 +9,9 @@ class Crawler:
         COOKIE = st.secrets["COOKIE"]
         self.headers = {
             "Cookie": COOKIE,
-            "User-Agent": "user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
         }
 
-    @staticmethod
     def fetch_soup(self, url: str) -> BeautifulSoup:
         if url == "":
             return ""
@@ -20,8 +19,15 @@ class Crawler:
         html = requests.get(url, headers=self.headers)
         return BeautifulSoup(html.content, "html.parser")
 
-    @staticmethod
-    def make_submission_url(problem_url: str, user_id: str) -> str:
+    def check_user_id_exists(self, user_id: str) -> bool:
+        url = f"https://atcoder.jp/users/{user_id}"
+        return self.fetch_soup(url).title.text != "404 Not Found - AtCoder"
+
+    def fetch_username(self, user_id: str) -> str:
+        url = f"https://atcoder.jp/users/{user_id}"
+        return self.fetch_soup(url).find("a", class_="username").text.strip()
+
+    def make_submission_url(self, problem_url: str, user_id: str) -> str:
         if problem_url == "":
             return ""
         submission_url = problem_url.replace(
@@ -29,24 +35,22 @@ class Crawler:
         )
         return submission_url
 
-    @staticmethod
     def fetch_problem_name(self, url: str) -> str:
         if url == "":
             return ""
-        soup = self.fetch_soup(self=self, url=url)
+        soup = self.fetch_soup(url)
         for tag in soup.select("title"):
             while True:
                 if tag.text[0] != "4":
                     return tag.text
         return "問題名取得失敗"
 
-    @staticmethod
     def fetch_result_by_problem(self, problem_url: str, student_ids: list) -> dict:
         results = {student_id: ("未提出", "") for student_id in student_ids}
         if problem_url == "":
             return results
-        submission_url = self.make_submission_url(problem_url=problem_url, user_id="")
-        soup = self.fetch_soup(self=self, url=submission_url)
+        submission_url = self.make_submission_url(problem_url, "")
+        soup = self.fetch_soup(submission_url)
         table = soup.find("div", class_="table-responsive")
         if table is None:
             return results
@@ -69,15 +73,12 @@ class Crawler:
                 )
         return results
 
-    @staticmethod
     def fetch_result_by_user(self, problem_url: str, user_id: str) -> tuple:
         result = ("未提出", "")
         if problem_url == "" or user_id == "":
             return result
-        submission_url = self.make_submission_url(
-            problem_url=problem_url, user_id=user_id
-        )
-        soup = self.fetch_soup(self=self, url=submission_url)
+        submission_url = self.make_submission_url(problem_url, user_id)
+        soup = self.fetch_soup(submission_url)
         tbody = soup.find("tbody")
         if tbody is None:
             return result
