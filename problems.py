@@ -135,8 +135,6 @@ S2_sort = [
     "https://atcoder.jp/contests/abc337/tasks/abc337_b",
 ]
 S2_sort_advance = [
-    "https://atcoder.jp/contests/abc275/tasks/abc275_a",
-    "https://atcoder.jp/contests/abc201/tasks/abc201_b",
     "https://atcoder.jp/contests/abc088/tasks/abc088_b",
     "https://atcoder.jp/contests/abc082/tasks/abc082_b",
     "https://atcoder.jp/contests/joi2012yo/tasks/joi2012yo_c",
