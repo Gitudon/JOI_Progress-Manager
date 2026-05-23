@@ -15,10 +15,20 @@ def show_message():
 
 def input_student_ids() -> list:
     student_ids = []
+    crawler = cr.Crawler()
     for i in range(MAX_STUDENT_NUM):
         student_id = st.text_input(f"AtCoder IDを入力してください({i + 1}人目)")
         if student_id != "":
-            student_ids.append(student_id)
+            if not crawler.check_user_id_exists(student_id):
+                st.write(f"「{student_id}」は存在しないAtCoder IDです。")
+            else:
+                username = crawler.fetch_username(student_id)
+                if username != student_id:
+                    st.write(
+                        f"実際のAtCoder IDは「{username}」です。修正・再入力してください。"
+                    )
+                else:
+                    student_ids.append(student_id)
     if student_ids == []:
         student_ids.append("chokudai")
     return student_ids
@@ -117,7 +127,7 @@ def input_problems() -> dict:
             if url in dic.url_to_problem_name.keys():
                 problem_name = dic.url_to_problem_name[url]
             else:
-                problem_name = crawler.fetch_problem_name(self=crawler, url=url)
+                problem_name = crawler.fetch_problem_name(url)
             course_detail[url] = problem_name
     if course_detail == {}:
         course_detail["https://atcoder.jp/contests/practice/tasks/practice_1"] = (
@@ -172,7 +182,7 @@ def fast_mode(
 ) -> pd.DataFrame:
     crawler = cr.Crawler()
     for url in course_detail.keys():
-        results = crawler.fetch_result_by_problem(crawler, url, student_ids)
+        results = crawler.fetch_result_by_problem(url, student_ids)
         for student_id in student_ids:
             result_text, submission_detail = results[student_id]
             color = ditect_submission_detail_color(result_text)
@@ -194,7 +204,7 @@ def detail_mode(
     for student_id in student_ids:
         for url in course_detail.keys():
             result_text, submission_detail = crawler.fetch_result_by_user(
-                crawler, url, student_id
+                url, student_id
             )
             color = ditect_submission_detail_color(result_text)
             if submission_detail != "":
