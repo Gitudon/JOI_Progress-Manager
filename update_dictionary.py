@@ -21,6 +21,7 @@ def update_dictionary() -> dict:
     problem_urls = [
         A_calc,
         A_if,
+        A_if_advance,
         B_string,
         B_for,
         C_list,
@@ -28,8 +29,8 @@ def update_dictionary() -> dict:
         S1_while,
         S1_multi,
         S1_multi_list,
-        S2_Built_in_functions,
-        S2_Built_in_functions_advance,
+        S2_built_in_functions,
+        S2_built_in_functions_advance,
         S2_sort,
         S2_sort_advance,
         S3_function,
@@ -42,7 +43,7 @@ def update_dictionary() -> dict:
     for problem_list in problem_urls:
         for url in problem_list:
             if url not in new_url_to_problem_name.keys():
-                problem_name = crawler.fetch_problem_name(self=crawler, url=url)
+                problem_name = crawler.fetch_problem_name(url=url)
                 new_url_to_problem_name[url] = problem_name
     return new_url_to_problem_name
 

@@ -40,6 +40,7 @@ def select_course() -> str:
         options=(
             "A - 四則演算",
             "A - 条件分岐",
+            "A - 条件分岐(上級)",
             "B - 文字列",
             "B - forループ",
             "C - リスト",
@@ -79,6 +80,8 @@ def get_problems_by_course(course: str) -> list:
         return pb.A_calc
     elif course == "A - 条件分岐":
         return pb.A_if
+    elif course == "A - 条件分岐(上級)":
+        return pb.A_if_advance
     elif course == "B - 文字列":
         return pb.B_string
     elif course == "B - forループ":
@@ -94,9 +97,9 @@ def get_problems_by_course(course: str) -> list:
     elif course == "S1 - 多次元リスト":
         return pb.S1_multi_list
     elif course == "S2 - 組み込み関数":
-        return pb.S2_Built_in_functions
+        return pb.S2_built_in_functions
     elif course == "S2 - 組み込み関数(上級)":
-        return pb.S2_Built_in_functions_advance
+        return pb.S2_built_in_functions_advance
     elif course == "S2 - ソート関数":
         return pb.S2_sort
     elif course == "S2 - ソート関数(上級)":
