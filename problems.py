@@ -37,11 +37,11 @@ A_if_advance = [
 ]
 B_string = [
     "https://atcoder.jp/contests/abc197/tasks/abc197_a",
+    "https://atcoder.jp/contests/abc160/tasks/abc160_a",
+    "https://atcoder.jp/contests/abc362/tasks/abc362_a",
     "https://atcoder.jp/contests/abc358/tasks/abc358_a",
     "https://atcoder.jp/contests/abc218/tasks/abc218_a",
     "https://atcoder.jp/contests/abc149/tasks/abc149_a",
-    "https://atcoder.jp/contests/abc160/tasks/abc160_a",
-    "https://atcoder.jp/contests/abc362/tasks/abc362_a",
     "https://atcoder.jp/contests/abc388/tasks/abc388_a",
     "https://atcoder.jp/contests/abc179/tasks/abc179_a",
     "https://atcoder.jp/contests/abc336/tasks/abc336_a",
