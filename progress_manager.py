@@ -42,6 +42,7 @@ def select_course() -> str:
             "A - 条件分岐",
             "A - 条件分岐(上級)",
             "B - 文字列",
+            "B - 文字列(上級)",
             "B - forループ",
             "C - リスト",
             "C - 1次予選過去問",
@@ -84,6 +85,8 @@ def get_problems_by_course(course: str) -> list:
         return pb.A_if_advance
     elif course == "B - 文字列":
         return pb.B_string
+    elif course == "B - 文字列(上級)":
+        return pb.B_string_advance
     elif course == "B - forループ":
         return pb.B_for
     elif course == "C - リスト":
