@@ -23,6 +23,7 @@ def update_dictionary() -> dict:
         A_if,
         A_if_advance,
         B_string,
+        B_string_advance,
         B_for,
         C_list,
         C_kakomon,

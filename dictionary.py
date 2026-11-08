@@ -211,4 +211,7 @@ url_to_problem_name = {
     "https://atcoder.jp/contests/abc194/tasks/abc194_a": "A - I Scream",
     "https://atcoder.jp/contests/joi2022yo1c/tasks/joi2022_yo1c_b": "B - アイスクリーム (Ice Cream)",
     "https://atcoder.jp/contests/abc472/tasks/abc472_b": "B - Break a Stick",
+    "https://atcoder.jp/contests/abc354/tasks/abc354_a": "A - Exponential Plant",
+    "https://atcoder.jp/contests/abc335/tasks/abc335_a": "A - 202<s>3</s>",
+    "https://atcoder.jp/contests/abc322/tasks/abc322_b": "B - Prefix and Suffix",
 }

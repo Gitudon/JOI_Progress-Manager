@@ -37,28 +37,35 @@ A_if_advance = [
 ]
 B_string = [
     "https://atcoder.jp/contests/abc197/tasks/abc197_a",
-    "https://atcoder.jp/contests/abc160/tasks/abc160_a",
-    "https://atcoder.jp/contests/abc362/tasks/abc362_a",
-    "https://atcoder.jp/contests/abc358/tasks/abc358_a",
-    "https://atcoder.jp/contests/abc218/tasks/abc218_a",
     "https://atcoder.jp/contests/abc149/tasks/abc149_a",
+    "https://atcoder.jp/contests/abc335/tasks/abc335_a",
     "https://atcoder.jp/contests/abc388/tasks/abc388_a",
-    "https://atcoder.jp/contests/abc179/tasks/abc179_a",
     "https://atcoder.jp/contests/abc336/tasks/abc336_a",
     "https://atcoder.jp/contests/abc333/tasks/abc333_a",
+    "https://atcoder.jp/contests/abc358/tasks/abc358_a",
+    "https://atcoder.jp/contests/abc160/tasks/abc160_a",
+    "https://atcoder.jp/contests/abc218/tasks/abc218_a",
+    "https://atcoder.jp/contests/abc179/tasks/abc179_a",
     "https://atcoder.jp/contests/abc222/tasks/abc222_a",
+]
+B_string_advance = [
+    "https://atcoder.jp/contests/abc167/tasks/abc167_a",
+    "https://atcoder.jp/contests/abc224/tasks/abc224_a",
+    "https://atcoder.jp/contests/abc362/tasks/abc362_a",
+    "https://atcoder.jp/contests/abc236/tasks/abc236_a",
+    "https://atcoder.jp/contests/abc322/tasks/abc322_b",
 ]
 B_for = [
     "https://atcoder.jp/contests/joi2022yo1b/tasks/joi2022_yo1b_c",
+    "https://atcoder.jp/contests/abc111/tasks/abc111_a",
     "https://atcoder.jp/contests/aising2020/tasks/aising2020_a",
     "https://atcoder.jp/contests/abc279/tasks/abc279_a",
-    "https://atcoder.jp/contests/abc276/tasks/abc276_a",
-    "https://atcoder.jp/contests/joi2022yo1c/tasks/joi2022_yo1c_c",
     "https://atcoder.jp/contests/abc184/tasks/abc184_b",
-    "https://atcoder.jp/contests/abc111/tasks/abc111_a",
-    "https://atcoder.jp/contests/joi2021yo1c/tasks/joi2021_yo1c_b",
-    "https://atcoder.jp/contests/joi2021yo1a/tasks/joi2021_yo1a_b",
+    "https://atcoder.jp/contests/joi2022yo1c/tasks/joi2022_yo1c_c",
+    "https://atcoder.jp/contests/abc276/tasks/abc276_a",
     "https://atcoder.jp/contests/joig2021-open/tasks/joig2021_b",
+    "https://atcoder.jp/contests/joi2021yo1a/tasks/joi2021_yo1a_b",
+    "https://atcoder.jp/contests/joi2021yo1c/tasks/joi2021_yo1c_b",
     "https://atcoder.jp/contests/joi2020yo1b/tasks/joi2020_yo1b_b",
 ]
 C_list = [
@@ -91,6 +98,7 @@ C_kakomon = [
 S1_while = [
     "https://atcoder.jp/contests/joi2019yo/tasks/joi2019_yo_a",
     "https://atcoder.jp/contests/abc243/tasks/abc243_a",
+    "https://atcoder.jp/contests/abc354/tasks/abc354_a",
     "https://atcoder.jp/contests/abc116/tasks/abc116_b",
     "https://atcoder.jp/contests/joi2020yo1a/tasks/joi2020_yo1a_c",
 ]
